@@ -1,0 +1,448 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.journey-board {
+    flex: 1;
+}
+
+.asset-container {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+   .asset-container {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Header styles */
+header {
+    background-color: white;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main styles */
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Adjust alignment as per design */
+    min-height: 100vh;
+}
+
+/* Journey board styles */
+.journey-board {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 800px;
+}
+
+
+
+.asset-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.asset-container p {
+    background-color: white;
+    color: black;
+}
+
+/* Arrow icon styles */
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 3px 0 3px;
+    border-color: #333 transparent transparent transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow.active {
+    transform: rotate(180deg);
+}
+
+/* Description styles */
+.description {
+    display: none;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid white;
+    background-color: #f0f0f0;
+}
+
+.description.active {
+    display: block;
+}
+
+/* YouTube video styles */
+.asset-container .video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio (height:width) */
+}
+
+.asset-container .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Style for the input fields */
+
+
+
+.subscribe-button:hover {
+    background-color: blue;
+}
+
+/* Optional: Add styles for the asset container and description */
+.asset-container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.asset-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.asset-header h2 {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+}
+
+.arrow.active {
+    transform: rotate(225deg);
+}
+
+.description {
+    display: none;
+    margin-top: 10px;
+}
+
+.description.active {
+    display: block;
+}
+
+/* Style for the subscribe button */
+.subscribe-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscribe-button:hover {
+    background-color: #45a049;
+}
+
+.subscribe-input {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    height: 40px; /* Set height for square shape */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for icons */
+.icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* Styles for content box and menu bar */
+.content-box {
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.asset-container {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .asset-container {
+        flex: 1 1 100%;
+    }
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.expanded {
+    transform: rotate(180deg);
+    transform-style: none;
+}
+
+.description-text {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 60px; /* Initial height, adjust as needed */
+    transform-style: none;
+}
+
+.expanded .description-text {
+    max-height: 100%; /* Expand to full height */
+}
+
+.see-more {
+    margin-top: 5px;
+    color: #007bff; /* Adjust color as needed */
+    cursor: pointer;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+.youtube-link {
+    position: relative;
+    margin-top: 10px;
+}
+
+.youtube-link iframe {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+}
+
+.icons-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: black; /* Adjust icon color as needed */
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #007bff; /* Adjust hover color as needed */
+}
+
+.watch-on-youtube-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:  rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.watch-on-youtube-button:hover {
+    background-color: gray;
+}
+
+.youtube-icon {
+    margin-right: 10px;
+    size: 20;
+}
+
+
+
+
+/* CSS Styles for Menu Bar */
+.menu-bar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-item {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #ccc;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* CSS Styles for Expand Box */
+.expand-box {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: max-height 0.3s ease;
+}
+
+.expand-box {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease; /* Smoothly transition height changes */
+}
+
+.expand-box.expanded {
+    max-height: 2000px; /* Adjust max-height as needed */
+}
+
+.description-text {
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    rotate: none;
+    transform: none; /* Smoothly transition opacity */
+}
+
+.expand-box.expanded .description-text {
+    opacity: 1;
+    transform-style: none;
+    rotate: none;
+}
+
+.dropdown-arrow {
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smoothly transition transform (e.g., rotation) */
+}
+
+.dropdown-arrow.expanded {
+    transform: rotate(180deg); /* Rotate arrow when expanded */
+}
+
+
+
+
+
